@@ -10,6 +10,14 @@
             color: white;
             font: normal 18pt Arial, sans-serif;
         }
+        body div {
+            width: 80px;
+            height: 40px;
+            background-color: rgb(155, 63, 63);
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -26,20 +34,15 @@
          botao.style.display = 'block'
         titulo[0].style.padding = '0.5rem' 
         titulo[0].style.display = 'flex'
-        botao.style.margin = '2rem 0'
-        botao.style.borderRadius = '5px'
-        botao.style.cursor = 'pointer'
+        
+        
         botao.style.padding = '1rem 2rem'
         botao.style.border = 'none'
         botao.style.boxShadow = '0 5px 2px black'
         botao.style.transition = 'background-color 0.3s ease-in-out'
         botao.addEventListener('click', function() {
             alert('Você clicou no botão!')
-        })
-               
-        
-        
-        
+        })       
         p1.style.color = 'yellow'
     </script>
 </body>
