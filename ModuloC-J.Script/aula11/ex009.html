@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where are you From?</title>
+    <style>
+        body {
+            background-color: rgb(173, 197, 187);
+            font: normal 20px Arial;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            
+        }
+        input[type="text"] {
+            font: normal 20px Arial;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 2px 2px rgb(78, 75, 75);
+            
+            
+        }
+
+        input[type="button"] {
+            font: normal 15px Arial;
+            color: rgb(185, 14, 14);
+            padding: 5px 10px;
+            background-color: rgb(214, 192, 207);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: rgba(133, 112, 112, 0.365);
+            color: black;
+        }
+
+        fieldset {
+            border: 2px solid #4a4b42;
+            border-radius: 20px;
+            padding: 2rem;
+        } 
+
+        label {
+            font: normal 20px Arial;
+            margin-bottom: 5px;
+        }
+        
+          
+    </style>
+</head>
+    <body>
+        <h1>Fale de onde você é e onde mora atualmente</h1>
+        <form>
+            <fieldset>
+                
+                <legend>Where are you from? and where do you live rigth now?</legend>
+                <label for=" Country of birth:">Country of birth</label> <br>
+                <input type="text" id="cbirth" placeholder="country here"><br>
+                <label for="Country you live: ">Country you live: </label><br>
+                <input type="text" id="clive" placeholder="Country here"><br>
+                <input type="button" value="verificar" onclick="Nacionalidade()">
+            
+            </fieldset>
+        </form>
+        <div>
+            <p id="result"></p>
+        </div>
+        <script>
+            function Nacionalidade() {
+                var cbirth = document.getElementById('cbirth').value.toUpperCase();
+                var clive = document.getElementById('clive').value.toUpperCase();
+                var result = document.getElementById('result');
+                if (cbirth === "BRASIL") {
+                result.innerHTML = `Você é brasileiro(a) e mora no(a) ${clive}<br>`;
+                } else {
+                result.innerHTML = `Você não é brasileiro(a) e mora no(a) país: ${clive}<br>`;
+                }
+            }
+        </script>       
+    </body>
+</html>
