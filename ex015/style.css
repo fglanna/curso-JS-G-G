@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(107, 149, 241);
+    font: normal 15pt Arial;
+}
+
+input[type="number"] {
+    
+    width: 80px;
+    border-radius: 3px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.562);
+}
+
+input[type="radio"] {
+    accent-color: #1b0baf;
+
+}
+header {
+    color: white;
+    text-align: center;
+
+}
+
+input[type="button"] {
+    background-color: #5e633d;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-top: 2px;
+    cursor: pointer;
+    box-shadow: 1px 1px rgb(51, 10, 117);
+    
+}
+
+input[type="button"]:hover {
+    background-color: #8dc787;
+    transition: background-color 0.3s ease;
+    color: black;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+
+} 
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    
+}
